@@ -20,6 +20,7 @@ With what we have learned about functions and data structures we will be able to
 Create a function in which you get a tuple of numbers, and return the sum of all positive numbers:
 
 input => output
+
 [1,-4,7,-2, -7,13] => 1 + 7 + 13 = 21
 
 
@@ -51,6 +52,7 @@ try now to search in a multidimensional list
 Write a function that takes a list of strings as an argument and returns a sorted list containing the same strings, ordered from shortest to longest.
 
 input => output
+
 ["Multidimensional", "Earth", "Try", "Banana"] => ["Try", "Earth", "Banana", "Multidimensional"]
 
 
@@ -58,7 +60,9 @@ input => output
 ### iteration 4.1 / **Join_the_dictionary**
 
 This function has to return the join of the firstName and the lastName attributes of the person argument with a space between them.
+
 input --> output
+
 { firstName : 'Luis' , lastName: 'Burón' } => "Luis Burón"
 
 ### Iteration 4.2 / **Fix_the_string**
@@ -66,6 +70,7 @@ input --> output
 This function has to return the join of the firstName and the lastName attributes of the person argument with a space between them. Also it has to transform the first letter of both values to upperCase if necessary.
 
 input --> output
+
 { firstName : 'Luis' , lastName: 'burón' } => "Luis Burón"
 
 ### Iteration 4.3 / **Fix_the_dictionary**
@@ -73,12 +78,14 @@ input --> output
 This function has to return the join of the firstName and the lastName attributes of the person argument with a space between them. Also it has to transform the first letter of every word of both values to upperCase if it is necessary. In this case, you can receive as lastName or firstName value a compound name.
 
 input => output
+
 { firstName : 'Luis Álvaro' , lastName: 'burón mejías' } => "Luis Álvaro Burón Mejías"
 
 ## BONUS - **get_best_students**
 
 Create a function get_best_students that takes a dictionary of students. The function must return a dictionary with the emails and the average of the students. These students must have a average value of 9 or more in their subjects. The output have to be orderer by average mark.
 For example:
+
 getBestStudents([
   {name : "Luis", age : 20, email : "luis@gmail.com", subjectsMarks : [9, 8, 10, 5 , 10]},
   {name : "Luigi", age : 14, email : "luigi@gmail.com", subjectsMarks : [9, 8, 10, 9 , 10]},
