@@ -81,7 +81,7 @@ input => output
 ### Iteration 5.1 / **Calculate Total Strength**
 
 The Hokage of Konoha has assigned you an important mission. You need to calculate the total strength of the konoha ninja for the 5th ninja war. For this Tsunade has given you a quick list of the best ninja, make sure it contains no mistakes.
-
+```
 ninjas = [
     {'name': 'Naruto', 'strength': 9000},
     {'name': 'Sasuke', 'strength': 8500},
@@ -90,6 +90,7 @@ ninjas = [
     {'name': 'Rock Lee', 'strength': 8000},
     {'name': 'Hinata', 'strength': 'unknown'}
 ]
+```
 
 1. Import the necessary module (reduce from functools).
 2. Copy the list of ninjas.
