@@ -80,8 +80,6 @@ input => output
 
 ### Iteration 5.1 / **Calculate Total Strength**
 
-
-
 The Hokage of Konoha has assigned you an important mission. You need to calculate the total strength of the konoha ninja for the 5th ninja war. For this Tsunade has given you a quick list of the best ninja, make sure it contains no mistakes.
 
 ninjas = [
@@ -113,10 +111,12 @@ def filter_ninjas_by_strength(ninjas, threshold):
     except ValueError:
         return "Error: strength threshold must be a number."
 
-# Example.
 print(filter_ninjas_by_strength(ninjas, 8000)) # Output: [{'name': 'Naruto', 'strength': 9000}]]
 print(filter_ninjas_by_strength(ninjas, 'high')) # Output: "Error: strength threshold must be a number."
 ```
+### Iteration 5.2 / **Get the Ninja Names**
+
+Use lambda and map to get a list of the names of the ninjas in capital letters.
 
 ## BONUS - **get_best_students**
 
