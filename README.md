@@ -57,15 +57,8 @@ input => output
 
 
 ## Iteration 4
-### iteration 4.1 / **Join_the_dictionary**
 
-This function has to return the join of the firstName and the lastName attributes of the person argument with a space between them.
-
-input --> output
-
-{ firstName : 'Luis' , lastName: 'Burón' } => "Luis Burón"
-
-### Iteration 4.2 / **Fix_the_string**
+### Iteration 4.1 / **Fix_the_string**
 
 This function has to return the join of the firstName and the lastName attributes of the person argument with a space between them. Also it has to transform the first letter of both values to upperCase if necessary.
 
@@ -73,13 +66,57 @@ input --> output
 
 { firstName : 'Luis' , lastName: 'burón' } => "Luis Burón"
 
-### Iteration 4.3 / **Fix_the_dictionary**
+### Iteration 4.2 / **Fix_the_dictionary**
 
 This function has to return the join of the firstName and the lastName attributes of the person argument with a space between them. Also it has to transform the first letter of every word of both values to upperCase if it is necessary. In this case, you can receive as lastName or firstName value a compound name.
 
 input => output
 
 { firstName : 'Luis Álvaro' , lastName: 'burón mejías' } => "Luis Álvaro Burón Mejías"
+
+## Iteration 5
+> ⚠️ **Warning:**  ninjas only use the functions lambda, map, reduce and filter any other way of doing the mission will not be approved by Tsunade. 
+![Tsunade](https://static.wikia.nocookie.net/naruto/images/3/39/Sello_Fuerza_de_un_Centenar_Anime.png/revision/latest?cb=20130725152120&path-prefix=es)
+
+### Iteration 5.1 / **Calculate Total Strength**
+
+
+
+The Hokage of Konoha has assigned you an important mission. You need to calculate the total strength of the konoha ninja for the 5th ninja war. For this Tsunade has given you a quick list of the best ninja, make sure it contains no mistakes.
+
+ninjas = [
+    {'name': 'Naruto', 'strength': 9000},
+    {'name': 'Sasuke', 'strength': 8500},
+    {'name': 'Sakura', 'strength': 'high'},
+    {'name': 'Kakashi', 'strength': 9500},
+    {'name': 'Rock Lee', 'strength': 8000},
+    {'name': 'Hinata', 'strength': 'unknown'}
+]
+
+1. Import the necessary module (reduce from functools).
+2. Copy the list of ninjas.
+3. Make a function that receives the ninja object and checks with a try if it is a number or not. 
+4. Use reduce into the function together with a lambda function to sum the strength.
+5. Print the total strength of the ninjas.
+
+### Iteration 5.2 / **Calculate Total Strength**
+
+We already know the total strength of konoha but now we will need to know who are the strongest .
+Make a function that receives the object and a strength number.
+The function should return the ninjas that have a strength equal to or greater than what you have passed to the function. 
+
+Example : 
+```
+def filter_ninjas_by_strength(ninjas, threshold):
+    try:
+     return 
+    except ValueError:
+        return "Error: strength threshold must be a number."
+
+# Example.
+print(filter_ninjas_by_strength(ninjas, 8000)) # Output: [{'name': 'Naruto', 'strength': 9000}]]
+print(filter_ninjas_by_strength(ninjas, 'high')) # Output: "Error: strength threshold must be a number."
+```
 
 ## BONUS - **get_best_students**
 
