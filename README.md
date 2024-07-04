@@ -123,7 +123,7 @@ Use lambda and map to get a list of the names of the ninjas in capital letters.
 
 Create a function get_best_students that takes a dictionary of students. The function must return a dictionary with the emails and the average of the students. These students must have a average value of 9 or more in their subjects. The output have to be orderer by average mark.
 For example:
-
+```
 getBestStudents([
   {name : "Luis", age : 20, email : "luis@gmail.com", subjectsMarks : [9, 8, 10, 5 , 10]},
   {name : "Luigi", age : 14, email : "luigi@gmail.com", subjectsMarks : [9, 8, 10, 9 , 10]},
@@ -134,7 +134,7 @@ returns [
   {email : "mario@gmail.com", average : 9.6 }, 
   {email : "luis@gmail.com", average : 9.2 }
  ]
-
+```
 ## Submission
 
 Upon completion, run the following commands:
