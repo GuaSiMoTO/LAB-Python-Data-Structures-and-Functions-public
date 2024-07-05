@@ -18,62 +18,62 @@ With what we have learned about functions and data structures we will be able to
 ## Iteration 1 / **Add_the_positives**
 
 Create a function in which you get a tuple of numbers, and return the sum of all positive numbers:
-
+```
 input => output
 
 [1,-4,7,-2, -7,13] => 1 + 7 + 13 = 21
-
+```
 
 ## Iteration 2
 
 ### Iteration 2.1 / **Count_the_color**
 
 Write a function that asks the user for a color and counts the number of times it appears in the list.
-
+```
 ["red", "blue", "red", "white", “green”, “black”, “orange”, “black”, “red”]
 
 input => output
 
 blue => the color blue appears 2 times.
-
+```
 ### Iteration 2.2 / **Count_the_color_multidimensional** 
 
 try now to search in a multidimensional list
-
+```
 [
 ["red", "blue", "red", "white"],
 ["yellow", "red", "blue", "green"],
 ["white", "red", "blue", "yellow"],
 ["green", "black", "orange", "orange"]
 ]
-
+```
 ## Iteration 3 / **strings_order**
 
 Write a function that takes a list of strings as an argument and returns a sorted list containing the same strings, ordered from shortest to longest.
-
+```
 input => output
 
 ["Multidimensional", "Earth", "Try", "Banana"] => ["Try", "Earth", "Banana", "Multidimensional"]
-
+```
 
 ## Iteration 4
 
 ### Iteration 4.1 / **Fix_the_string**
 
 This function has to return the join of the firstName and the lastName attributes of the person argument with a space between them. Also it has to transform the first letter of both values to upperCase if necessary.
-
+```
 input --> output
 
 { firstName : 'Luis' , lastName: 'burón' } => "Luis Burón"
-
+```
 ### Iteration 4.2 / **Fix_the_dictionary**
 
 This function has to return the join of the firstName and the lastName attributes of the person argument with a space between them. Also it has to transform the first letter of every word of both values to upperCase if it is necessary. In this case, you can receive as lastName or firstName value a compound name.
-
+```
 input => output
 
 { firstName : 'Luis Álvaro' , lastName: 'burón mejías' } => "Luis Álvaro Burón Mejías"
-
+```
 ## Iteration 5
 > ⚠️ **Warning:**  ninjas only use the functions lambda, map, reduce and filter any other way of doing the mission will not be approved by Tsunade. 
 ![Tsunade](https://static.wikia.nocookie.net/naruto/images/3/39/Sello_Fuerza_de_un_Centenar_Anime.png/revision/latest?cb=20130725152120&path-prefix=es)
