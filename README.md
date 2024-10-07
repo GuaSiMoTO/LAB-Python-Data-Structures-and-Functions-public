@@ -1,84 +1,94 @@
+![](https://user-images.githubusercontent.com/970858/63474771-d6734700-c469-11e9-83bb-9429da563909.png)
 
-# LAB - Python Data Structures (Updated)
+# LAB-Python-Data-Structures-and-Functions
 
 ## Introduction
 
-In this lab, you will practice working with various **Data Structures** in Python, including **Lists**, **Tuples**, **Sets**, and **Dictionaries**. You will also reinforce your understanding of functions by solving real-world inspired tasks. The goal is to progressively build up your skills and apply these core concepts efficiently.
-
 > ***Note:*** _This can be a pair programming activity or done independently._
+
+With what we have learned about functions and data structures we will be able to solve new problems and challenges in python, let's see how it goes.
 
 ## Requirements
 
 - [Learn how to fork this repo](https://guides.github.com/activities/forking/)
 - Clone this repo into your `code/labs` folder
 
+
 ---
 
-## Iteration 1 / **Create a Shopping List with Quantities**
+## Iteration 0 / **Add_the_positives**
 
-Create a function that receives the name of a product and its quantity, and adds it to a list of products, each containing a name and quantity.
-
-```python
-# Example
-add_product([['apples', 4], ['bananas', 6]], 'milk', 2)
+Create a function in which you get a tuple of numbers, and return the sum of all positive numbers:
 ```
-
-## Iteration 2 / **Sum All Positive Numbers in Nested Lists**
-
-Create a function that receives a matrix (list of lists) of numbers and returns the sum of all positive numbers.
-
-```python
 input => output
 
-[[1, -4], [7, -2], [-7, 13]] => 21
+[1,-4,7,-2, -7,13] => 1 + 7 + 13 = 21
 ```
 
-## Iteration 3 / **Calculate Average from Tuples**
+### Iteration 1 / **Count_the_color**
 
-Write a function that takes a tuple of numbers and returns the average of all elements.
+Write a function that asks the user for a color and counts the number of times it appears in the list.
+```
+["red", "blue", "red", "white", “green”, “black”, “orange”, “black”, “red”]
 
-```python
 input => output
 
-(2, 3, 5) => 3.33
+blue => the color blue appears 2 times.
 ```
+### Iteration 2 / **Count_the_color_multidimensional** 
 
-## Iteration 4 / **Convert List to Set, Then Return Sorted List**
+try now to search in a multidimensional list
+```
+[
+["red", "blue", "red", "white"],
+["yellow", "red", "blue", "green"],
+["white", "red", "blue", "yellow"],
+["green", "black", "orange", "orange"]
+]
+```
+## Iteration 3 / **strings_order**
 
-Create a function that takes a list with duplicates, converts it to a set (to remove duplicates), and returns the sorted list.
-
-```python
+Write a function that takes a list of strings as an argument and returns a sorted list containing the same strings, ordered from shortest to longest.
+```
 input => output
 
-['apple', 'banana', 'apple', 'orange'] => ['apple', 'banana', 'orange']
+["Multidimensional", "Earth", "Try", "Banana"] => ["Try", "Earth", "Banana", "Multidimensional"]
 ```
 
-## Iteration 5 / **Find Item in Set and Return Index in Original List**
+### Iteration 4 / **Fix_the_string**
 
-Write a function that checks if a certain item exists in a set, and returns its index in the original list before conversion to set. If the item is not found, return -1.
+This function has to return the join of the firstName and the lastName attributes of the person argument with a space between them. Also it has to transform the first letter of both values to upperCase if necessary.
+```
+input --> output
 
-```python
+{ firstName : 'Luis' , lastName: 'burón' } => "Luis Burón"
+```
+### Iteration 5 / **Fix_the_dictionary**
+
+This function has to return the join of the firstName and the lastName attributes of the person argument with a space between them. Also it has to transform the first letter of every word of both values to upperCase if it is necessary. In this case, you can receive as lastName or firstName value a compound name.
+```
 input => output
 
-{'apple', 'banana', 'orange'}, 'banana' => 1
+{ firstName : 'Luis Álvaro' , lastName: 'burón mejías' } => "Luis Álvaro Burón Mejías"
 ```
 
-## Iteration 6 / **Calcular el Total de Precios en un Diccionario de Productos**
 
-Crea una función que reciba un diccionario donde las claves sean nombres de productos y los valores sean listas de dos elementos: la cantidad de productos comprados y su precio unitario. La función debe calcular y devolver el **precio total** de todos los productos en el diccionario.
+## Iteration 6 / **Calculate Total Prices in a Product Dictionary**
+
+Create a function that receives a dictionary where the keys are product names and the values are lists containing two elements: the quantity of the product bought and the unit price. The function should calculate and return the **total price** of all the products in the dictionary.
 
 ```python
-# Ejemplo de entrada
-productos = {
-    'apple': [4, 1.5],  # 4 manzanas a 1.5 cada una
-    'banana': [6, 0.9],  # 6 bananas a 0.9 cada una
-    'milk': [2, 1.2]  # 2 botellas de leche a 1.2 cada una
+# Example input
+products = {
+    'apple': [4, 1.5],  # 4 apples at 1.5 each
+    'banana': [6, 0.9],  # 6 bananas at 0.9 each
+    'milk': [2, 1.2]  # 2 bottles of milk at 1.2 each
 }
 
-# Llamada a la función
-total = calcular_total(productos)
+# Call the function
+total = calculate_total(products)
 
-# El resultado debe ser:
+# The result should be:
 # Total: 4 * 1.5 + 6 * 0.9 + 2 * 1.2 = 6 + 5.4 + 2.4 = 13.8
 print(total)  # Output: 13.8
 ```
@@ -111,7 +121,7 @@ input => output
 [[1, 2], [3, 4], [5, 6]] => 2 4 6
 ```
 
-## Iteration 10 / **Find Maximum in Nested Dictionary**
+## Bonus 1 - **Find Maximum in Nested Dictionary**
 
 Create a function that takes a dictionary of students with a list of grades and returns the student with the highest average.
 
@@ -124,44 +134,32 @@ find_best_student({
 }) => 'Charlie'
 ```
 
-## BONUS 1 / **List Comprehensions**
+## BONUS 2 - **get_best_students**
 
-Create a list of squares of numbers from 0 to 9 using a list comprehension.
-
-```python
-squares = [x**2 for x in range(10)]
-print(squares)
+Create a function get_best_students that takes a dictionary of students. The function must return a dictionary with the emails and the average of the students. These students must have a average value of 9 or more in their subjects. The output have to be orderer by average mark.
+For example:
 ```
+getBestStudents([
+  {name : "Luis", age : 20, email : "luis@gmail.com", subjectsMarks : [9, 8, 10, 5 , 10]},
+  {name : "Luigi", age : 14, email : "luigi@gmail.com", subjectsMarks : [9, 8, 10, 9 , 10]},
+  {name : "Mario", age : 25, email : "mario@gmail.com", subjectsMarks : [9, 10, 10, 9, 10]},
+])
 
-## BONUS 2 / **Dictionary of Even Numbers**
-
-Create a dictionary where the keys are numbers from 1 to 10 and the values are `True` if the number is even and `False` if it is odd.
-
-```python
-# Example
-{1: False, 2: True, 3: False, 4: True, 5: False, 6: True, 7: False, 8: True, 9: False, 10: True}
+returns [
+  {email : "mario@gmail.com", average : 9.6 }, 
+  {email : "luis@gmail.com", average : 9.2 }
+ ]
 ```
-
-## BONUS 3 / **Tuple Operations**
-
-Create a function that takes two tuples and concatenates them into one larger tuple.
-
-```python
-input => output
-
-(1, 2, 3), (4, 5, 6) => (1, 2, 3, 4, 5, 6)
-```
-
 ## Submission
 
 Upon completion, run the following commands:
 
-```bash
+```
 $ git add .
 $ git commit -m "done"
 $ git push origin main
 ```
 
-Then create a Pull Request!
+Then create a Pull Request!!
 
-Happy coding!
+![happy_coding](https://user-images.githubusercontent.com/970858/63899010-c23fc480-c9ea-11e9-84a2-542907e42362.png)
